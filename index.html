@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Neon Drift</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+
+        <div class="hudBox">
+            <span>MESAFE</span>
+            <strong id="distance">0 m</strong>
+        </div>
+
+        <div class="hudBox">
+            <span>DÜŞÜŞ</span>
+            <strong id="falls">0</strong>
+        </div>
+
+    </div>
+
+
+    <div id="startScreen" class="screen">
+
+        <div class="menu">
+
+            <div class="logo">
+                NEON
+                <span>DRIFT</span>
+            </div>
+
+            <p>
+                Neon yolda minibüsü dengede tut.<br>
+                Virajları al, uçurumdan düşme.
+            </p>
+
+            <button id="startButton">
+                BAŞLA
+            </button>
+
+            <small>
+                PC: A / D veya ← / →<br>
+                Mobil: Parmağını sağa / sola sürükle
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div id="finishScreen" class="screen hidden">
+
+        <div class="menu">
+
+            <div class="finish">
+                FINISH
+            </div>
+
+            <p>
+                Parkuru tamamladın!
+            </p>
+
+            <strong id="finishDistance">
+                0 m
+            </strong>
+
+            <button id="restartButton">
+                TEKRAR OYNA
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="mobileControls">
+
+        <button id="leftButton">◀</button>
+        <button id="rightButton">▶</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
